@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Abhaya+Libre:wght@500&family=Kumbh+Sans:wght@500&family=Lexend+Deca:wght@300&family=Lilita+One&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 'navbar' 'main';
+}
+.navbar{
+    background-color: #47a992;
+    box-shadow: 0px 3px 0.5px rgba(0,0, 0, 0.3);
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 200px auto 100px 100px 100px;
+    grid-template-rows: 75px;
+    grid-template-areas: 'home bell username-nav icon-prof';
+}
+
+.main{
+    grid-area: main;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'sub-main';
+}
+
+.sub-main{
+    grid-area: sub-main;
+    background-color: white;
+    width: 100%;
+    height: 565px;
+    box-shadow: 2px 3px 0.1px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 52% 48%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 'profile text-pro' 'edit edit' ;
+}
+.profile{
+    background-image: url(./img/profil-user.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    grid-area: profile;
+    position: absolute;
+    border: 2px solid #47a992;
+    width: 355px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 230px;
+    margin-top: 60px;
+}
+
+.edit{
+    grid-area: edit;
+    position: absolute;
+    border: 2px solid #47a992;
+    width: 355px;
+    height: 60px;
+    border-radius: 3px;
+    margin-left: 230px;
+    margin-top: 451px;
+    text-decoration: none;
+}
+
+.fa-pen{
+    color: #47a992;
+    font-size:25px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.edit p{
+    font-size: 35px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #47a992;
+    margin-left: 150px;
+    margin-top: 4px;
+    text-decoration: none;
+
+}
+
+.text{
+   grid-area: text-pro;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text1,
+.text3,
+.text5{
+   font-size: 20px;
+}
+
+.text1{
+    margin-top: 120px;
+}
+.text2{
+    margin-top: 10px;
+}
+.text3{
+    margin-top: 50px;
+}
+.text4{
+    margin-top: 10px;
+}
+.text5{
+    margin-top: 50px;
+}
+.text6{
+    margin-top: 10px;
+}
+
+.icon-home{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 11px;
+    margin-left: 130px;
+    grid-area: home;
+}
+.fa-house{
+    color: white;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.fa-bell{
+    grid-area: bell;
+    color: white;
+    font-size: 30px;
+    margin-top: 21px;
+    margin-left: 950px;
+}
+
+.container-side-bell{
+    grid-area: bell;
+    background-color: white;
+    width: 3px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 990px;
+}
+
+.username-nav{
+    grid-area: username-nav;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 27px;
+}
+
+.fa-chevron-down{
+    grid-area: username-nav;
+    color: white;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 29px;
+}
+
+.logo-prof img{
+    grid-area: icon-prof;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    margin-top: 17px;
+    margin-left: 15px;
+}

@@ -1,0 +1,499 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Kumbh+Sans:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Kumbh+Sans:wght@500&family=Lilita+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Kumbh+Sans:wght@500&family=Lilita+One&family=Poppins:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Abhaya+Libre:wght@500&family=Kumbh+Sans:wght@500&family=Lilita+One&family=Poppins:wght@300;400;500;600&display=swap');
+
+    
+    body{
+    margin: 0;
+    padding: 0;
+    }
+    /* ..............................................................grid mencakup semua konten............................................................... */
+    .container{
+    display: grid;
+    grid-template-columns:100% ;
+    grid-template-rows: 75px 600px 2600px 115px;
+    grid-template-areas: 'navbar' 'landing' 'main' 'footer';
+    height:100%;
+    width:100% ;
+    }
+    /* ......................................................................grid bagian navbar .............................................................*/
+    .navbar{
+    background-color: #47a992;
+    grid: navbar;
+    display: grid;
+    grid-template-columns: 90px auto 90px 120px 80px 120px 90px; 
+    grid-template-areas: 'logo namaweb home kategori login useracc profile';
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    height: 75px;
+    z-index: 1  ;
+    }
+    /* text di samping logo navbar */
+    .namaweb{
+    font-family: 'Aldrich', sans-serif;
+    padding-top: 8px;
+    color: white;
+    font-size: 18px;
+    grid-area: namaweb;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    } 
+    /*text navbar home  */
+    .home{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: transparent;
+    border:none;
+    height: 30px;
+    width: 90px;
+    margin-top: 22px;
+    font-size: 18px;
+    grid-area: home;
+    cursor: pointer;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    } 
+    .home:hover{
+    background-color: #58D1B5;
+    border-radius: 5px;
+    margin-top: 12.5px;
+    width: 90px;
+    height: 50px;
+    }
+    .kategori-nav:hover{
+    background-color: #58D1B5;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 115px;
+    height: 50px;
+    }
+    .login:hover{
+    background-color: #58D1B5;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 80px;
+    height: 50px;
+    }
+    /* text navbar kategori*/
+    .kategori-nav{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 115px;
+    margin-top: 22px;
+    font-size: 18px;
+    grid-area: kategori;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* text login */
+    .login{
+    font-family: 'Abeezee' , sans-serif;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
+    grid-area: login;
+    margin-top: 22px;   
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* text username */
+    .user-acc{
+    font-family: 'ABeeZee', sans-serif;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 115px;
+    margin-top: 22px;
+    font-size: 18px;
+    grid-area: useracc;
+    cursor: default;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* profile user */
+    .profile{
+    grid-area: profile;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    cursor: pointer;
+    }
+    /* keseluruhan tag a */
+    .home,
+    .kategori-nav,
+    .login,
+    .user-acc
+    {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    /* pengaturan untuk logo web pada navbar */
+    #logoweb{
+    height: 53px;
+    width: 58px;
+    margin-left: 25px;
+    margin-top: 10px;
+    grid-area: logo;
+    }
+    /* item kategori */
+    .container-menu{
+        background-color: #47a992;
+        width: 200px;
+        height: 280px;
+        margin-left: 1140px;
+        margin-top: -3px;
+        opacity: 0.9;
+        display: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;   
+        box-shadow: 0px 2px 0.5px rgba(0, 0, 0, 0.5);
+    }
+    .menu{
+        list-style: none;
+        margin-right: 20px;
+        margin-left: -10px;
+        line-height: 50px;
+    }
+    .menu a{
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    .menu a:hover{
+        color: darkblue;
+        text-decoration: underline;
+    }
+    #kategori-menu:hover + .container-menu,
+    .container-menu:hover {
+        display: block;
+    }
+    
+    /* .....................................................................bagian landing..................................................................... */
+    .landing{ 
+    background-image: url(./images/landing\ baru.jpg);
+    background-size: cover;
+    background-position-y: -145px;
+    grid-area: landing;
+    }
+    .textlanding{
+    color: white;
+    font-family: 'Kumbh Sans' , sans-serif;
+    -webkit-text-stroke: 0.5px black;
+    padding-top: 130px;
+    padding-left: 100px;
+    font-size: 50px;
+    line-height: 40px;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* bagian search */
+    .searchbox{
+    width: 550px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: white;
+    align-items: center;
+    }
+    .searchtext{
+    position: absolute;
+    top: 438.5px;
+    left: 110px;
+    background: none;
+    outline: none;
+    line-height: 20px;
+    width: 530px;
+    border: none;
+    padding-left: 35px;
+    }
+    .searchbox i{
+        color: black;
+        font-size: 19px;
+        margin-left: 15px;
+        margin-top: 6px;
+        position: absolute;
+    }
+    /* ...................................................................konten utama ........................................................................*/
+    .main{
+    background-color: white;
+    grid-area: main;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 500px 150px 1200px auto;
+    grid-template-areas: 'head' 'corousel' 'headertext' 'paragraph' 'komentar';
+    }
+    ::-webkit-scrollbar{
+    display: none;
+    }
+    /* carousell */
+    .kategori-scroll{
+    grid-area: corousel;
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    height: 600px;
+    margin-left: 70px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 1400px;  
+    }
+    .kategori-scroll ::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    }
+    .kategori-scroll img:hover {
+    transform: scale(1.1);
+    }
+    .kategori-scroll img {
+    transition: transform 0.2s ease;
+    }
+    .link{
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: 437px;  
+    margin-top: 22px;
+    margin-left: 66px;
+    width: 464px;
+    }
+    .sejarah-berdirinya{
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: 437px;
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 464px;
+    }
+    .peninggalan{
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: 437px;
+    margin-top: 22px;
+    margin-left: 68px;
+    width: 464px;
+    }
+    /* kategori */
+    .main .textheading{
+    padding-top: 40px;
+    padding-left: 70px;
+    color: #47a992;
+    font-family: 'Lilita One';
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    grid-area: head;
+    }
+    /* bagian header (kerajaan majapahi) */
+    .headertext{
+    padding-left: 33%;
+    padding-top: 40px;
+    color: #47a992;
+    font-family: 'Lilita One';
+    letter-spacing: 2.5px;
+    font-size: 20px;
+    grid-area: headertext;
+    }
+    .paragraph .paragraf-1{
+    font-family: 'Abhaya Libre', serif;
+    padding-top: 5px;
+    padding-left: 930px;
+    padding-right: 90px;
+    font-size: 24px;
+    grid-area: paragraph;
+    letter-spacing: 3px;
+    text-align: left right;
+    text-align: justify;
+    }
+    .paragraph .paragraf-2{
+    font-family: 'Abhaya Libre', serif;
+    padding-top: 0px;
+    padding-left: 930px;
+    padding-right: 90px;
+    font-size: 24px;
+    grid-area: paragraph;
+    letter-spacing: 3px;
+    text-align: left right;
+    text-align: justify;
+    }
+    .paragraph .paragraf-3{
+    font-family: 'Abhaya Libre', serif;
+    padding-top: 5px;
+    padding-left: 95px;
+    padding-right: 90px;
+    font-size: 24px;
+    grid-area: paragraph;
+    letter-spacing: 3px;
+    text-align: left right;
+    text-align: justify;
+    }
+    
+    .img-paragraf{
+        grid-area: paragraph;
+        margin-left: 100px;
+        margin-top: 34px;
+        position: absolute;
+    }
+    /* bagian komentar */
+            .comment-container {
+                margin-top: 100px !important;
+                margin-left: 75px !important;
+                width: 500px;
+                height: 200px;
+                margin: 0 auto;
+                padding: 20px;
+                border: none;
+                border-radius: 10px;
+                background-color: #ececec9e ;
+                grid-area: komentar;
+            }
+            .comment-container h2{
+                font-family: 'Lilita One';
+                color: rgb(66, 66, 66);
+                letter-spacing: 3px;
+            }
+
+            .comment-form input{
+                width: 495px;
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }   
+
+            .comment-nama{
+                font-weight: bold; 
+                margin: 0; /* Tambahkan margin 0 untuk menghapus default margin dari <p> */
+            }
+
+
+            .comment-item {
+                margin-bottom: 10px; /* Spasi antar komentar */
+                padding-bottom: 10px; /* Spasi bawah setiap komentar */
+                overflow: hidden; /* Atasi masalah margin-collapse */
+            }
+
+            .comment-item p {
+                margin: 5px 0 0 0; /* Tambahkan margin 0 untuk menghapus default margin dari <p> */
+            }
+
+            .nama-user-kolom-komentar::placeholder{
+                position: absolute;
+                left: 8px;
+            }
+
+            .comment-form textarea {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-left: -1px;
+                width: 480px;
+                height: 20px;
+            }
+
+            .comment-form textarea::placeholder{
+                position: absolute;
+                top: 11px;
+            }
+
+            .comment-form button {
+                background-color: #47a992;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+                position: absolute;
+                width: 70px;
+                height: 25px;
+                margin-left: 428px;
+            }
+            .comment-form button:hover{
+                background-color: #58D1B5;
+            }
+
+            .tampil-komen {
+                background-color: #f0f0f0;
+                padding: 10px;
+                border-radius: 8px;
+                margin-top: 50px;
+                margin-left: 75px;
+                width: 520px;
+                display: none;
+            }
+            
+            .tampil-komen p {
+                padding: 10px;
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            
+            .comment-meta {
+                font-size: 12px;
+                color: #888;
+                float: right;
+                margin-top: -80px !important;
+                margin-right: 5px;
+            }
+
+           .like-button i {
+                 border: none;
+            }
+
+            .like-button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 14px;
+                color: #888; /* Warna default */
+                margin-left: 7px;
+            }
+            
+            .like-button.active {
+                color: rgb(66, 66, 255); /* Warna saat bernilai 1 */
+            }
+
+    /* .........................................................................bagian footer................................................................... */
+    .footer{
+    background-color: #47a992;
+    grid-area: footer;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+    .footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    }
+    .icon-ig{
+    grid-area: footer;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 782px;
+    position: absolute;
+    }
+    .icon-git{
+    grid-area: footer;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 732px;
+    position: absolute;
+    }

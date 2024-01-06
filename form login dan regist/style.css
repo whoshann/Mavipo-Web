@@ -1,0 +1,162 @@
+/* container shape kiri */
+.container{
+    width: 200px;
+    height: 100%;
+    background-color: #47A992;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* container form login */
+.container2{
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 580px;
+    margin-top: 23px;
+}
+/* kontainer LOGIN */
+h2{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 36%;
+    color: #47A992;
+}
+/* kontainer username */
+input{
+    width: 230px;
+    height: 47px;
+    font-size: 18px;
+    border: 0.1px solid black;
+    position: relative;
+    z-index: 0;
+    border: none;
+}
+/* untuk container user */
+.containeruser{
+    background-color: transparent;
+    width: 295px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 0;
+}
+.user{
+  margin-left: 60px;
+  outline: 0px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.containerpass{
+    background-color: transparent;
+    width: 295px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: -60px;
+    position: absolute;
+}
+.pass{
+    margin-left: 60px;
+    outline: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/* placeholder */
+.container3 ::placeholder{
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* button */
+.buttonsubmit{
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 90px;
+    margin-left: 80px;
+    border: none;
+    background-color: #47A992;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+}
+/* kotakhome */
+.containerhome{
+    color: transparent;
+    border: white solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translate(-55%);
+}
+/* homeicon */
+.homeicon{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%,-50%);
+    font-size:30px ;
+}
+
+.iconuser{    
+    width: 51.5px; 
+    height: 51.5px;
+    background-color: #47A992;
+    z-index: 1; 
+    border-bottom-left-radius: 8.5px;
+    border-top-left-radius: 8px;
+    margin-left: 50px;
+    margin-bottom: -63px;
+    margin-top: 90px;
+}
+/* iconusername */
+.icon {
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+/* kotak password */
+.iconpass{ 
+    width: 51.5px; 
+    height: 51.5px;
+    background-color: #47A992;
+    z-index: 1; 
+    border-bottom-left-radius: 8.5px;
+    border-top-left-radius: 8px;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 8px;
+}
+/* icon password */
+.icon2{
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    margin-left: 12.2px;
+    margin-top: 10px;
+}
+.paragraf{
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.paragraf a {
+    color: #47A992;
+    text-decoration: none;
+}
+.paragraf a:hover{
+    text-decoration: underline;
+}
