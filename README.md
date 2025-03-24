@@ -1,2 +1,2 @@
 # Mavipo-Web
-Mavipo (Majapahit Virtual Exploration), adalah website yang menyajikan informasi mengenai sejarah kerajaan Majapahit
+Mavipo (Majapahit Virtual Exsploration), adalah website yang menyajikan informasi mengenai sejarah kerajaan Majapahit
